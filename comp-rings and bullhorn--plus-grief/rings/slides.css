@@ -1,0 +1,338 @@
+/*** slide ***/
+.flexslider .slide {
+/*    display: none; */
+    -webkit-backface-visibility: hidden;
+}
+.flexslider {
+    position: relative;
+    zoom: 1;
+    padding-top: 10px;
+    padding-left: 10px;
+    background: black;
+  height: 264px;
+  width: 470px;
+  color: white;
+} 
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  color: black;
+  display: none;
+}
+.active{
+  z-index:99; /* double tutorial... display none or this, not both */
+  display: block;
+}
+
+nav {
+  width: 100%;
+  margin-top: -12px; /* into -16px margin */
+  margin-bottom: 1em;
+}
+nav div {
+  margin-left:120px;
+}
+
+#nav {
+  z-index: 100;
+  background: rgba(100,100,100,50);
+}
+#nav a { /*, #nav a:link, #nav a:visited { */
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  border-radius: 25px;
+  background: rgba(100,100,100,.55);
+  padding: 0 6px 6px 6px; /* funky arrow eyeballs ok */
+  /* &lt, &#x21a4; */
+}
+#nav a.back {
+  position: absolute;
+  z-index: 100;
+  left: -10px;
+  top: 45%;
+}
+#nav .fwd {
+  position: absolute;
+  z-index: 100;
+  top: 45%;
+  right: -10px;
+}
+
+
+#slideshow-2 img {
+  border-right: 2px solid white; /* not ideal! */
+} 
+
+
+
+/*** regular css ***/
+#slideshow-2 #cycle-2 div.cycle-slide { overflow: hidden;
+ border: .5px solid blue; margin-right: 3px; background: white; }
+#r10 {
+  background: url("./images/rings/rb_2_voice_b.png") no-repeat 0px 20px;
+  background-size: 100%;
+}
+#s10 img { position: relative; top: 10px; }
+
+#r20 {
+  background: url("./images/1. Echo_Chamber_pre--cropped.png") no-repeat 0px 60px;
+  background-size: 100%;
+}
+#r30, #r31, #r32, #r33 {   /* whole right side, background shifted up */
+  background: url("./images/ring_theory.png") no-repeat 120px -34px;
+  background-size: 88%;
+}
+#r32 {   /* whole right side, background shifted up */
+  background: url("./images/soup_and_listen_v1.png") no-repeat right top;
+  background-size: 46%;
+}
+#s30 img {
+   position: relative; left: 30px; top: -9px; 
+}
+#s40 img {
+  margin-left: 60px;
+}
+#s31, { display: none; visibility: hidden; width: 0; }
+
+#r40, #r41, #r42, #r43 {        /* simple right side */
+  background: url("./images/rings/rb_1_rings.jpg") no-repeat right top;
+  background-size: 45%;
+}
+#r31 h2, #r33 h2 {
+  width: 200px;
+}
+#r32 h2 {
+  width: 250px;
+}
+#r40 h2, #r41 h2, #r42 h2, #r43 h2{
+  width: 255px;
+}
+#r50, #r51, #r52, #r80 {
+  background: url("./images/rings/rb_2_voice_b_step0.png") no-repeat 6px 18px;
+  background-size: 100%;
+}
+#r50 h1, #r51 h1, #r52 h1 {
+  width: 55%;
+}
+
+#r60 {
+  background: url("./images/rings/rb_2_voice_b.png") no-repeat -110px 18px;
+  background-size: 120%;
+}
+#r61 {
+  background: url("./images/rings/rb_2_voice_b.open.png") no-repeat -190px -70px;
+  background-size: 120%;
+}
+#in-horn {
+  margin: 2em 0em 2em 12em;
+}
+
+
+#rsocial {
+  background: url("./images/rings/rb_2_social.png") no-repeat 180px -30px;
+  background-size: 100%;
+}
+#rsocial-2 {
+  background: url("./images/rings/rb_2_social.png") no-repeat 230px -30px;
+  background-size: 100%;
+}
+#rsocial-3 {
+  background: url("./images/rings/rb_2_social.png") no-repeat 275px -30px;
+  background-size: 100%;
+}
+
+#rsocial h2 {
+  width: 200px;
+}
+#rsocial-2 h2 {
+  width: 250px;
+}
+#rsocial-3 h2 {
+  width: 295px;
+}
+
+
+
+/*** Standards ***/
+div.slide {
+  height: 264px;
+  width: 470px;
+  border: 1px solid blue;
+  overflow: none; /* right now, just for .CP img   of book */
+  padding: 4px;
+  margin-bottom: 1em;
+}
+.slide .col_A {
+  width: 200px;
+}
+.slide .col_A_bump {
+  width: 225px;
+}
+.slide .col_Aplus {
+  width: 250px;
+}
+.slide .rightward {
+  text-align: right;
+  max-width: 250px;
+}
+.slide .rightward-some {
+  text-align: right;
+  max-width: 250px;
+}
+#rsocial-3 .rightward-some {
+  text-align: right;
+  max-width: 295px;
+}
+
+
+.slide h1 {
+  font-size: 1.7em;
+  padding: 0 0 .1em 0;
+  margin: 0;
+}
+.slide h2 {
+  font-size: 1.3em;
+  padding: .1em 0 .3em 0;
+  margin: 0;
+}
+.slide p { 
+  padding: 0 0 .25em 0;
+  margin: 0;
+  font-size: 1.15em;
+}
+.slide h1.padme {
+  padding-top: .4em;
+  padding-bottom: .5em;
+}
+.slide h2.padme {
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+
+.slide .bigger {
+  font-size: 1.2em;
+}
+.slide .biggger {
+  font-size: 1.4em;
+}
+.slide .welcome-line {
+  position: absolute;
+  bottom: 0px;
+  padding: 3px 6px;
+  margin: 0 -4px; /* undo padding */
+  width: 466px;
+  background: rgba(142,18,245,.7);
+  color: white;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: .85em;
+}
+.CP img {
+  height: 55px;
+  line-height: 55px; /* nope */
+  positionX: relative;
+  margin-bottom: -8px; /* not sure why, but ok? */ 
+  /** or go over the margins **/
+  margin-bottom: -20px;
+  margin-right: -6px;
+  padding: 3px;
+  background: rgba(142,18,245,.7);
+  bottom: 0;
+  border-top-left-radius: 8px;
+}
+.CP {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden; /* didn't do the cutting, go up to blue line */
+}
+.CP .text {
+  background: rgba(255,255,255,.8);
+  background: rgba(142,18,245,.7);
+  color: white;
+  padding: 3px 6px;
+  border-top-left-radius: 8px;
+}
+
+div.nerd {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(255,255,255,.8);
+  background: rgba(142,18,245,.7);
+  color: white;
+  padding: 3px 6px;
+}
+.CP a,
+div.nerd a {
+  color: #b0f7ff;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/** adding padding and colors **/
+.round-top-left {
+  border-top-left-radius: 12px;
+  border: 1px solid transparent;
+}
+
+h1, h2 {
+  background: rgba(142,18,245,.2);
+  background: #e9efe5;
+}
+.slide h1, .slide h2 {
+  margin-left: -4px;
+  margin-right: -4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.slide>h1, .slide>h2 {
+  margin-top: -4px;
+  padding-top: 4px;
+}
+.leftblock {
+  width: 200px;
+  text-align: center;
+}
+
+.resource { 
+  text-align: center;
+  width: 23.3%;
+  float: left;
+  padding: 3px 2px 3px 5px;
+  border-right: 1px solid #ddd;
+  height: 228px;
+}
+.last-in-row { border-right: none; }
+/*
+.last-in-row {
+/* div.resource::last-of-type { /* fails 
+  margin-right: -8px;
+  background: red;
+}
+*/
+
+
+/*** slider ***/
+div.inactive { display: none; }
+
+.caption {
+  position: absolute;
+  padding: 2px;
+  width: 110px;
+  overflow: none;
+  background-color: rgba(233, 239, 229, .5);
+  z-index: 101;
+
+}
+.caption p { 
+  margin-top: 0; padding-top: 0; margin-bottom: 0;
+}
+.cap-left {
+  width: inherit;
+  padding-right: 8px;
+}

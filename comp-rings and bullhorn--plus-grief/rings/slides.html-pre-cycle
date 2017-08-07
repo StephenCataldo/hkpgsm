@@ -1,0 +1,234 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./slides.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+<!-- one of these -->
+<script src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        /*
+        $('.flexslider').myflexslider({
+            animation: 'fade',
+            controlsContainer: '.flexslider'
+        });
+        */
+    });
+  function myflexslider($show, $adjust = null) {
+    var i; 
+    var slides = $(".slide"); //document.getElementsByClassName("slide");
+    if ( $adjust ) {
+//      $(".slide").map(function(index) {
+      $(".slide").each( function(i,e) {
+         $(e).show(); // should work too?  $(this).attr(id);
+console.log( $(e).attr('id') );
+//nope: $(e).(":visible").console.log("its visible");a
+//$(e).(":visible").click(function() {
+$(e).is(":visible").console.log("its visible"); ... sometimes undef
+
+//if ($(e).(":visible")) { console.log("its visible"); }
+        console.log(this);
+ //        console.log("x");
+      });
+  
+
+/*
+      for (i = 0; i < slides.length; i++) {
+sld = $(".slide").eq(i);
+console.log(i + ": " + $(".slide").eq(i).style.display);
+if ( $(".slide")[i].is(":visible") ) { alert("visibible for " + i); }
+        if ( slides[i].style.display == "block" ) {
+alert("flipping " . i );
+          slides[i].style.display = "none";
+          slides[i+$adjust].style.display = "block"; 
+          return;
+        }
+      }
+*/
+    }
+  }
+</script>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flexslider">
+1<br/>
+2<br/>
+3<br/>
+4<br/>
+5<br/>
+
+<div id="nav">
+  <a class="back" href="#" onClick="myflexslider('', '-1')"><!-- &lt;-->&#x21a2;</a><a class="fwd" href="#" onClick="myflexslider('', '1')">&#x21a3;</a>
+</div>
+
+<div class="slide active" id="r10">
+<h1>Rings and Bullhorns:</h1>
+<h2>Whose voice should you echo for effective social media in the face of political outrages?</h2>
+<div class="welcome-line">Part of <em>Self-Herding Kittens: A DIY Guide for Progressive Social Media</em></div>
+</div>
+
+<div class="slide" id="r20">
+<h1>Progressive Social Media Skillshare</h1>
+<p>Integrating a variety of techniques so we can be leaderless and effective. Be the media, self-organize when the right has marching orders.</p>
+<div class="nerd">geek out: <a href="/soon">a variety of techniques</a></div>
+</div>
+
+
+<div class="slide" id="r30">
+<p class="">This short video brings another 
+<br/>non-political communication tool 
+<br/>to politics:</p>
+<h2 class="padme leftblock" style="margin-left: 2px; margin-top: 6px">How not to say<br/>
+the wrong thing.</h2>
+<h1 class="padme leftblock"  style="margin-left: 2px;">Susan Silk's<br/>Ring Theory</h1> 
+<div class="nerd"><a href="/soon">orig article</a></div>
+</div>
+
+
+<div class="slide" id="r31">
+<h2>Ring Theory Basics:</h2>
+<p class="col_A">When someone in your cirlces is ill or aggrieved,
+send comfort toward them and anyone closer to them
+than you are. If you need to unload stress,
+dump out toward farther friends.</a>
+<p class="col_A bigger">Seems obvious, <br/>but also easy to forget.</p>
+<div class="nerd"><a href="/soon">orig article</a></div>
+</div>
+
+
+<div class="slide" id="r40">
+<h2 class="biggger">Rings Applied to Politics:</h2>
+<p class="col_A biggger">When a politician commits an outrage,
+who gets hurt? How personal is it?
+</div>
+
+<div class="slide" id="r41">
+<h2 class="biggger">Rings Applied to Politics:</h2>
+<p class="col_A biggger">Listening, comfort and solidarity should go 
+inward.</p>
+<p class="col_A biggger">Expect both leadership and a need to dump stress to come from inner circles
+outward.</p>
+</div>
+
+
+
+<div class="slide" id="r50">
+<h2>Part 1, Media: Give voice to the center circle</h2>
+<p class="">Ex: If someone else fears a family member may be deported and you don't, 
+simply share their voice.
+Echo them by keeping your voice, your ego, and your need to process to a minimum.</p>
+<div class="nerd"><a href="/soon">orig article</a></div>
+</div>
+
+
+<div class="slide" id="r51">
+<h2>Part 1, Media: Don't Muffle the Consequences</h2>
+<p class="">Do you want your listeners to argue with you sitting at your keyboard, or face the direct and personal consequences of their political actions? Don't muffle first-person voices by adding your <a href="congitive politics taxonomy erm">keyboard-judgment</a>. 
+<div class="nerd"><a href="/soon">Counterbalance: Judgment</a></div>
+</div>
+
+
+<div class="slide" id="r52">
+<h2>Part 1, Media: Keep a List of Voices to Echo</h2>
+<p class="bigger">It's more effective, more fair, and even easier.</p>
+<p class="bigger">Keep a list of people speaking in the first person, 
+simply share those articles when you need to comment.</p>
+<div class="nerd"><a href="http://cognitivepolitics.org/voice">Bookmark the 'Voice' list at Cognitive Politics</a></div>
+</div>
+
+
+
+
+<div class="slide" id="r60">
+<h2>Part 1B, Media: Echo the center circle</h2>
+<p class="bigger">Trusted messengers are a key to getting across filter bubbles.
+Complement the voices of direct witnesses with people your audeince will trust.
+</p>
+<div class="nerd"><a href="/soon">orig article</a></div>
+</div>
+
+
+<div class="slide" id="r61">
+<h2>Part 1B, Media: Echo the center circle</h2>
+<p class="bigger" id="in-horn">Find religious leaders, conservatives, military experts or others who agree on this policy. Don't score points; no one is keeping score. Change happens when we are on the same side.
+</p>
+</div>
+
+
+
+
+
+<div class="slide" id="rsocial">
+<h2 class="">Part 2, Social: <br/>Support the center</h2>
+<p class="col_A bigger rightward">Dumping your stress and anger
+can't replace a medical plan or political social media plan.
+Dealing with stress and anger is absolutely fair 
+and normal part of life — offer comfort and solidarity.
+<div class="nerd"><a href="http://cognitivepolitics.org/both_hands">geek out: On Both Hands: Anger</a></div>
+</div>
+
+<div class="slide" id="rsocial-2">
+<h2 class="">Part 2, Social: <br/>Hugs, Not Echo Chambers</h2>
+<p class="rightward-some">Sometimes we need hugs, and all
+we have is facebook. Don't police your friend's anger. But don't
+spread it beyond your friend circle — show up or private message them, 
+rather than
+try to push facebook's algorithm to give angry posts maximum
+exposure. <div class="nerd"><a href="http://cognitivepolitics.org/both_hands">geek out: On Both Hands: Anger</a></div>
+</div>
+
+<div class="slide" id="rsocial-3">
+<h2 class="">Part 2, Social: <br/>Listening is Work</h2>
+<p class="rightward-some">When someone famous
+dumps their anger, they are asking for a lot of people to do the
+work of supporting them. This is backward. Make sure everyone is
+heard by the circle that can support them. Don't be afraid to
+ask for support, to ask people to listen to you; simply dump out, comfort in.
+<div class="nerd"><a href="http://cognitivepolitics.org/both_hands">geek out: On Both Hands: Anger</a></div>
+</div>
+
+
+<div class="slide" id="r80">
+<h2>Echo the voices and witnesses directly impacted.</h2>
+<h2>Anger and stress deserve comfort — not echoes.</h2>
+</div>
+
+
+
+<div class="slide" id="r90">
+<h1>What's Next?</h1>
+<p>This video explores what to echo and how to deal with stress: the "media" and the "social" in social media. Other videos look at dealing with Trump's outrage machine, using Nonviolent Communication techniques, and framing — and then
+put these different ideas together.
+<div style="font-size: 1.4em;" class="nerd"><a href="/soon">Next Video</a></div>
+</div>
+
+
+
+<div class="slide" id="resources">
+<h1>Social Media Skillshare Resources</h1>
+
+<div class="resource">Skillshare Videos</div>
+
+<div class="resource"><a href="http://cognitivepolitics.org"><img src="../../images/cogpol-bookshelf-01.jpg" width="100%"><br/>Cognitive Politics</a>
+<br/>Get the book or join the discussion.</div>
+
+<div class="resource"><a href="http://cognitivepolitics.org/book-rec">Recommended Readings</a></div>
+
+<div class="resource last-in-row"><a href="http://articles.latimes.com/2013/apr/07/opinion/la-oe-0407-silk-ring-theory-20130407"><img src="./images/circles-capture.png" style="width: 100%;"><br/>How not to say the wrong thing</a>
+</div>
+
+<div style="font-size: 1.4em;" class="nerd"><a href="/soon">Next Video</a></div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div></div></body>
