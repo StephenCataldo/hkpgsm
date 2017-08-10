@@ -1,74 +1,5 @@
-/*** slide ***/
-.flexslider .slide {
-/*    display: none; */
-    -webkit-backface-visibility: hidden;
-}
-.flexslider {
-    position: relative;
-    zoom: 1;
-    padding-top: 10px;
-    padding-left: 10px;
-    background: black;
-  height: 264px;
-  width: 470px;
-  color: white;
-} 
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: white;
-  color: black;
-  display: none;
-}
-.active{
-  z-index:99; /* double tutorial... display none or this, not both */
-  display: block;
-}
-
-nav {
-  width: 100%;
-  margin-top: -12px; /* into -16px margin */
-  margin-bottom: 1em;
-}
-nav div {
-  margin-left:120px;
-}
-
-#nav {
-  z-index: 100;
-  background: rgba(100,100,100,50);
-}
-#nav a { /*, #nav a:link, #nav a:visited { */
-  color: white;
-  font-size: 1.5em;
-  text-decoration: none;
-  border-radius: 25px;
-  background: rgba(100,100,100,.55);
-  padding: 0 6px 6px 6px; /* funky arrow eyeballs ok */
-  /* &lt, &#x21a4; */
-}
-#nav a.back {
-  position: absolute;
-  z-index: 100;
-  left: -10px;
-  top: 45%;
-}
-#nav .fwd {
-  position: absolute;
-  z-index: 100;
-  top: 45%;
-  right: -10px;
-}
-
-
-#slideshow-2 img {
-  border-right: 2px solid white; /* not ideal! */
-} 
-
 
 /*** Rebuild for Chapters ***/
-#cycle-1 { float: left; height: 301px; width: 480px;}
 #slideshow-2 {
   width: 366px; /* (114+?)3tighten this */
   padding-left: 12px;
@@ -170,15 +101,6 @@ nav div {
 
 /*** Standards ***/
 
-
-div.slide {
-  height: 264px;
-  width: 470px;
-  border: 1px solid blue;
-  overflow: none; /* right now, just for .CP img   of book */
-  padding: 4px;
-  margin-bottom: 1em;
-}
 .slide .col_A {
   width: 200px;
 }
@@ -282,12 +204,10 @@ div.nerd {
   padding: 3px 6px;
 }
 div.go {
-  text-align-NOPE: right;
   position: absolute;
   right: -20px;
   color: white;
-  padding: 9px 9px 9px 20px;
-  width: 5.5em;
+  padding: 9px 9px 9px 50px;
   border-radius: 25px;
   font-variant: small-caps;
   vertical-align: sub;
@@ -299,23 +219,22 @@ div.go a {
   font-size: 1.2em;
   position: relative;
   top: 3px; /* meh */
+  padding: 3px 10px 20px 0px;
   }  
+div.go-twolines a {
+  top: -6px;
+  }
+   
 div.go-vid { 
   top: 115px;  
   background: yellow url("../images_misc/ic_play_circle_filled_white_black_48dp.png") no-repeat center left;
-  width: 40px;
-  width: 4.6em;
   height: 30px;
-  padding-left: 50px;
   }
  
 div.go-exp {
   top: 160px; 
   background: yellow url("../images_misc/ic_touch_app_black_48dp.png") no-repeat center left;
-  width: 40px;
-  width: 4.6em;
   height: 30px;
-  padding-left: 50px; 
   }
     
 

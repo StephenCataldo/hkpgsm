@@ -1,0 +1,83 @@
+.slideme { display: none; }
+
+@media screen and (min-width: 940px) {
+	div.slide { 
+	  max-width: 940px;
+	}
+	div.slide .main {
+	  float: left; 
+	}
+
+	.post-slide {
+	  height: 258px;
+      width: 400px;
+      float: right;
+      background: rgba(153,50,204,.05);
+	  font-size: 1.3em;	
+	}
+	.post-slide::before {
+	  content: "—";
+	  position: relative;
+	  left: -1.85em;
+	}
+	
+}
+@media screen and (max-width: 939px) {
+	.post-slide {
+      width: 464px;
+	  margin-bottom: 3em;
+	  clear: both;
+	  background: white;
+	    font-size: 1.25em;
+	}
+	div.slide {
+	  clear: both;
+	}
+	.main {
+	  clear: both;
+	}
+
+}
+
+
+.post-slide { 
+  border: 3px solid rgba(153,50,204,.3);
+  padding: 6px 12px;  
+  position: relative; /* to hold the "tension" div */
+  border-radius: 6px;
+}
+.tension {
+  background: rgba(153,50,204,.12);
+  width: 100%;
+  margin: 2px -12px;
+  padding: 2px 12px;
+  border-bottom: .5px solid yellow;
+  border-top: .5px solid yellow;
+
+} 
+.bottom { 
+  position: absolute; bottom: 0px; left: 0px; 
+  padding: 2px 12px;
+  margin: 0 0 1px 0;
+  width: inherit;
+  border-bottom-radius: 6px;
+  }
+
+	
+	
+/*** Standards ***/
+
+div.slide .main {
+  height: 264px;
+  width: 470px;
+  border: 3px solid rgba(0, 0, 255,.3);  /* blue; */
+  border-radius: 6px;
+  overflow: none; /* right now, just for .CP img   of book */
+  padding: 4px;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  position: relative; /* to hold children */
+}
+
+
+div.slide { clear: left; }
