@@ -16,7 +16,7 @@
 	  font-size: 1.3em;	
 	}
 	.post-slide::before {
-	  content: "\2014";
+	  content: &mdash;
 	  position: relative;
 	  left: -1.85em;
 	}

@@ -1,0 +1,307 @@
+
+/*** Rebuild for Chapters ***/
+#slideshow-2 {
+  width: 366px; /* (114+?)3tighten this */
+  padding-left: 12px;
+  } 
+@media screen  { 
+  #slideshow-2 {
+    /*margin-left: 500px; /* works on big screens, not responsive */
+    float: right; /* not ideal way to do this */
+
+  } 
+}
+@media screen AND (width < 851px) {
+  #slideshow-2 {
+  }
+}
+#slideshow-2 #cycle-2 div.cycle-slide,  
+#cycle-2>div { 
+	width: 114px; 
+	float: left; 
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding: 1px;
+	margin-bottom: 2px;
+	border: 1px solid red; margin-right: 3px; background: white; 
+	}
+
+#slideshow-2 #cycle-2 #s10, #slideshow-2 #cycle-2 #s40 {
+  border-color: green;
+  }
+
+#s30, #back-to-smg {
+  clear: left;
+  }
+#s10 {
+  margin-left: 60px;
+}
+#back-to-smg {
+  margin-left: 121px;
+}
+
+.XXX #slideshow-2 #cycle-2 div.cycle-slide { overflow: hidden;
+ border: .5px solid blue; margin-right: 3px; background: white; }
+
+.XXX #slideshow-2 #cycle-2 div#back-to-smg
+ { border: 2px solid black; margin-left: 6px; }
+ 
+.cap-left-XXX {
+  width: inherit;
+  padding-right: 8px;
+}
+ 
+ 
+ 
+/*** regular css ***/
+ 
+ 
+#ch10 {
+  background: url("../images_components/1. Echo_Chamber_pre.png") no-repeat 0px -10px;
+  background-size: 100%;
+}
+#s10 img { position: relative; top: 10px; }
+
+#ch20 {
+  background: url("../images_components/2. Left Shout Center Call Right (start).png") no-repeat 22px -10px;
+  background-size: 100%;
+}
+#ch20 h2, #ch20 h1 { width: 330px; }
+
+#ch30 {   /* whole right side, background shifted up */
+  background: url("../images_components/3. Audience Intersects Goals.png") no-repeat 0px -34px;
+  background-size: 88%;
+}
+
+#ch40 {      
+  background: url("../comp-rings and bullhorn--plus-grief/rings/images/rings/rb_2_voice_b.png") no-repeat 10px 20px;
+  background-size: 80%;
+}
+
+#ch50 {      
+  background: url("../images_components/8. Messenger Witness (ask- act-).png") no-repeat 145px 40px;
+  background-size: 68%;
+}
+#ch50 h2 {
+  width: 140px;
+  }
+  
+#ch60 {      
+  background: url("../images_components/25. Your story has a frame.png") no-repeat 0px -36px;
+  background-size: 100%;
+}
+
+
+#ch80 {      
+  background: url("../comp-flowchart/images/flowchart.png") no-repeat 0px 60px;
+  background-size: 100%;
+}
+
+
+
+/*** Standards ***/
+
+.slide .col_A {
+  width: 200px;
+}
+.slide .col_A_bump {
+  width: 225px;
+}
+.slide .col_Aplus {
+  width: 250px;
+}
+.slide .rightward {
+  text-align: right;
+  max-width: 250px;
+}
+.slide .rightward-some {
+  text-align: right;
+  max-width: 250px;
+}
+#chsocial-3 .rightward-some {
+  text-align: right;
+  max-width: 295px;
+}
+
+
+.slide h1 {
+  font-size: 1.7em;
+  padding: 0 0 .1em 0;
+  margin: 0;
+}
+.slide h2 {
+  font-size: 1.3em;
+  padding: .1em 0 .3em 0;
+  margin: 0;
+}
+.slide p { 
+  padding: 0 0 .25em 0;
+  margin: 0;
+  font-size: 1.15em;
+}
+.slide h1.padme {
+  padding-top: .4em;
+  padding-bottom: .5em;
+}
+.slide h2.padme {
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+
+.slide .bigger {
+  font-size: 1.2em;
+}
+.slide .biggger {
+  font-size: 1.4em;
+}
+.slide .welcome-line {
+  position: absolute;
+  bottom: 0px;
+  padding: 3px 6px;
+  margin: 0 -4px; /* undo padding */
+  width: 466px;
+  background: rgba(142,18,245,.7);
+  color: white;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: .85em;
+}
+.CP img {
+  height: 55px;
+  line-height: 55px; /* nope */
+  positionX: relative;
+  margin-bottom: -8px; /* not sure why, but ok? */ 
+  /** or go over the margins **/
+  margin-bottom: -20px;
+  margin-right: -6px;
+  padding: 3px;
+  background: rgba(142,18,245,.7);
+  bottom: 0;
+  border-top-left-radius: 8px;
+}
+.CP {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden; /* didn't do the cutting, go up to blue line */
+}
+.CP .text {
+  background: rgba(255,255,255,.8);
+  background: rgba(142,18,245,.7);
+  color: white;
+  padding: 3px 6px;
+  border-top-left-radius: 8px;
+}
+
+div.nerd {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(255,255,255,.8);
+  background: rgba(142,18,245,.7);
+  color: white;
+  padding: 3px 6px;
+}
+div.go {
+  position: absolute;
+  right: -20px;
+  color: white;
+  padding: 9px 9px 9px 50px;
+  border-radius: 25px;
+  font-variant: small-caps;
+  vertical-align: sub;
+  }
+div.go a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 900;
+  font-size: 1.2em;
+  position: relative;
+  top: 3px; /* meh */
+  padding: 3px 10px 20px 0px;
+  }  
+div.go-twolines a {
+  top: -6px;
+  }
+   
+div.go-vid { 
+  top: 115px;  
+  background: yellow url("../images_misc/ic_play_circle_filled_white_black_48dp.png") no-repeat center left;
+  height: 30px;
+  }
+ 
+div.go-exp {
+  top: 160px; 
+  background: yellow url("../images_misc/ic_touch_app_black_48dp.png") no-repeat center left;
+  height: 30px;
+  }
+    
+
+
+.CP a,
+div.nerd a {
+  color: #b0f7ff;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/** adding padding and colors **/
+.round-top-left {
+  border-top-left-radius: 12px;
+  border: 1px solid transparent;
+}
+
+h1, h2 {
+  background: rgba(142,18,245,.2);
+  background: #e9efe5;
+}
+.slide h1, .slide h2 {
+  margin-left: -4px;
+  margin-right: -4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.slide>h1, .slide>h2 {
+  margin-top: -4px;
+  padding-top: 4px;
+}
+.leftblock {
+  width: 200px;
+  text-align: center;
+}
+
+.resource { 
+  text-align: center;
+  width: 23.3%;
+  float: left;
+  padding: 3px 2px 3px 5px;
+  border-right: 1px solid #ddd;
+  height: 228px;
+}
+.last-in-row { border-right: none; }
+/*
+.last-in-row {
+/* div.resource::last-of-type { /* fails 
+  margin-right: -8px;
+  background: red;
+}
+*/
+
+
+/*** slider ***/
+div.inactive { display: none; }
+
+.caption {
+  position: absolute;
+  padding: 2px;
+  width: 110px;
+  overflow: none; /* insufficient */
+  background-color: rgba(233, 239, 229, .85);
+  z-index: 101;
+
+}
+.caption p { 
+  margin-top: 0; padding-top: 0; margin-bottom: 0;
+}
+
