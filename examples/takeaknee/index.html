@@ -1,8 +1,18 @@
 <html>
+<!-- more options:
+I don't think dialogues will be the final choice.
+  Possibly simple replace popup: http://dev.vast.com/jquery-popup-overlay/
+It might be more of a menu system from react or similar,
+or absolute positioned elements that fade in and out, like http://inspirationalpixels.com/tutorials/custom-popup-modal#step-jquery
+  or perhaps: https://stackoverflow.com/questions/1328723/how-to-generate-a-simple-popup-using-jquery
+-->
 <head>
   <link rel="stylesheet" type="text/css" href="../examples.css">
-  <link rel="stylesheet" type="text/css" href="../examples-pop.css">
+  <link rel="stylesheet" type="text/css" href="../examples-pop2.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="../pop.js"></script>
 </head>
 <!--
 It should show at level .see2 a basic, simple nav structure
@@ -10,228 +20,201 @@ Clicks either copy and paste something, or expand the window and center on that 
 -->
 <body class="start Xread">
 
-<nav class="see4">
-<ul><li class="see">What is This Guide?</li>
-<li class="see">Plan</li>
-  <ul>
-    <li class="see">Plan &mdash; Thinking About the Framing</li>
-    <li class="see">Plan:: Audience:: Outrage/Trolling</li>
-    <li class="see">Plan:: Audience:: Segmentation & Goals</li>
-    <li class="see">Teams / Frame</li>
-  </ul>
-
-<li class="see">Reply &mdash; Responses to Paste:</li>
-  <ul>
-    <li class="see">Re: Trolling that that this is “anti-military.”</li>
-    <li class="see">Some Conservatives See Through Trump</li>
-    <li class="see">Unity and Divisiveness</li>
-  </ul> 
-<li class="see">Initiate &mdash; Things to Post     ← Quick start is here!!!</li>
-  <ul>  
-    <li class="see">Observations:: What is happening?</li>
-    <li class="see">Observations:: I statements</li>
-    <li class="see">Post This! Messengers:: Sports -vs- Trump    ← Quick start is here!!!</li>
-    <li class="see">Messenger: Sports</li>
-    <li class="see">Messenger: Country Music</li>
-    <li class="see">Messenger: Conservatives who see Trump
-      <p>Many decent conservatives are upset that "their side" is led by Trump. Give them exposure
-      to voices "on their side" who see Trump for what he is, for example <a href="https://twitter.com/Evan_McMullin/status/911926608486834177">follow Evan McMullin on twitter.</a> Note: if liberals
-take the spotlight from Trump, and instead post civil disagreements with McMullin, that creates
-space for conservatives to defend a more decent conservative &mdash; possibly the biggest threat to 
-Trump and long-term Trump politics.</p>
-
-    </li>
-  </ul>
-
-<li class="see">Communication &mdash; 1:1 Dialogue</li>
-  <ul>
-  <li class="see">Emphasize areas of agreement for openings::</li>
-  <li class="see">What questions help open this conversation up?</li>
-  <li class="see">Getting Conversations back on track:</li>
-  <li class="see">Make specific requests.</li>
-  <li class="see">Communication:: NVC:: Requests:</li>
-  </ul> 
-
-<li class="see">Appendix</li>
-<li class="see">Footnote: Teaching Tolerance in classrooms: https://www.tolerance.org/magazine/discussing-takeaknee-in-class</li>
+<div class="see1">
+  <h2>Quick Guide: Take a Knee</h2>
+  <div class="see3">
+    <p>Quick issue guides suggest: (1) articles with a progressive frame for you to post and help go viral, (2) quick replies to common  to honest questions or derailment efforts, (3) suggestions for going deeper in one-to-one conversations.
 
 
-</nav>
+    <p>Based on the <a href="http://cognitivepolitics.org/social-media-guide-progressives">Progressive Guide to Social Media</a>: framing, radical civility and social media skills to effectively counter outrage-politics. Not intended to be shared with people you're arguing with, but to give  ideas and articles to share that help detangle arguments.</p>
+    
+    <p>Produced rather informally by people at <a href="http://cognitivepolitics.org">Cognitive Politics: a Communications Workbook for Progressives</a> and <a href="https://www.facebook.com/SocialMediaApproachesforRespectandTolerance/">Social Media Approaches for Respect and Tolerance</a> and we'd love for you to get involved! <a href="http://cognitivepolitics.org/issues/takeaknee">-more-</a></p>
+  </div><!-- see3 -->
+</div><!-- Intro -->
 
+<div class="see1 big plan-big">
+  <h2>Prepare for Outrage Trolling</h2>
+  <p class="see3x">Someone talks about racism, and Trump jumps in with something outrageous to distract and tribalize. What's your frame?</p>
+  <div class="see3">
+  	<h3 class="see4">Plan:: Outrage/Trolling</h3>
+	
+	
+  	<p>This story starts like many others: someone (Colin Kaepernick) is trying to get us to talk about racism, and Trump jumps in with something outrageous, designed to distract and tribalize. Isolating trolls means not taking the bait, instead countering them for their misbehavior from a centrist position that isolates them. See <a href="">Tension: Isolating Trolls and Keeping Your Voice.</a>
+  
+	<p>PS: Trolling is a technique. Fishing with outrages designed to get the left to react in a way that loses votes. Don't take the bait &mdash; <a href="http://cognitivepolitics.org/social-media-guide-progressives#outrage">learn counter-techinques.</a> But calling Trump a troll to his supporters is not an effective counter-technique. 
 
-<ul class="Xstart Xguide"><li class="see2"><h2>Quick Guide: Take a Knee</h2>
-<p class="see2">Posts to initiate, replies to other frames, and openings for dialogue.
-<span class="see3">Posts and replies are aimed at creating an atmosphere, conscious of everyone listening, while dialogues focus
-on one-to-one interactions. </span></p>
-<p class="see3">The <a href="http://cognitivepolitics.org/social-media-guide-progressives">Progressive Guide to Social Media</a> aims to teach many principles of framing, nonviolent communication, radical civility, and other ways to improve your social media. From the guide, we're developing issue-by-issue examples. The examples are the "how," the guide explains the why. The guide is intended to educate, and the example pages like this one provide resources that you can share with moderate and conservative friends in your social circles. <a href="">&mdash;more&mdash;</a></p> 
-
-<p class="see4">These guides are produced rather informally by people at <a href="http://cognitivepolitics.org">Cognitive Politics: a Communications Workbook for Progressives</a> and <a href="https://www.facebook.com/SocialMediaApproachesforRespectandTolerance/">Social Media Approaches for Respect and Tolerance</a> and we'd love for you to get involved!
-  </li>
-<li class="see2 plan-big"><h2>Plan, Prepare, Frame</h2>
-  <p class="see2">Issue frame: racism. Conversation frame: America is unified ...<span class="see3">and we listen if we disagree; Trump is alone, even people who donated to him are united that the president shouldn't bully individual Americans who quietly protest. </p>
-
-  <ul class="see4">
-    <li class="see"><h3>Plan:: Audience:: Outrage/Trolling</h3>
-<p>
-    <p>This story starts like many others: someone (Colin Kaepernick) is trying to get us to talk about racism, and Trump jumps in with something outrageous &mdash; Trump is trying to troll us, that is to put bait on a hook and get us to bite, arguing about the wrong thing, worsening rather than bridging the divisions in our society. 
-
-<p>PS: Trolling is a technique. Fishing with outrages designed to get the left to react in a way that loses votes. Don't take the bait &mdash; <a href="http://cognitivepolitics.org/social-media-guide-progressives#outrage">learn counter-techinques.</a> Calling Trump a troll to his supporters is not an effective counter-technique. 
-
-<p>Kaepernick said he is against police brutality and racism. He took steps to respect soldiers: kneeling, not sitting, specifically to show respect. And Trump came by and made it about Trump and patriotism. Plan: isolating trolls means not taking the bait, staying in your frame, and countering them for their misbehavior from a centrist position. See <a href="">Tension: Isolating Trolls and Keeping Your Voice.</a>
+  	<p>This leaves us with split goals: cost Trump voter loyalty for trolling, 
+and get the national conversation to engage racism and police 
+brutality/professionalism. <a href="http://cognitivepolitics.org/issues/takeaknee">-more-</a>
+  </div>	
+  <div class="see4" id="takeaknee-plan">
      <img class="blog-image" src="./images/Outrage.png"> 
 
-    </li>
-    <li class="see3"><h3>Plan:: Audience:: Segmentation & Goals</h3>
+    <h3>Audience Frame: "Trump vs Unity"</h3>
 
-    <p class="see2x">Not left -vs- right, but Trump vs sports, Trump vs everyone.</p>
+    <p>To make this a learning moment on racism, we have to open the door 
+    first.
+    If there are two sides here, it's vital that we not frame it as left -vs- right, 
+    reinforcing Trump's implied message that white conservatives, veterans and
+    rural working class people don't have to care about racism. Instead,
+    make it Trump vs sports, Trump vs everyone. Set the conversation as
+    Trump trolling the entire nation, and <em>then</em> talk about more serious
+    issues on racism.</p>
 
-    <h4>1. Patriotism and Unity</h4> 
+    <h3>Active Listening: Patriotism and Unity</h3> 
+ 
+ 
+ 
+    <p>Amidst this fracas, moderates and non-troll conservatives are often describing a desire that we get along better, that we stop being divided as a country. I think this is something we can agree with; it could be a powerful moment for that. Share that you feel the same way to help open conversations. 
 
-<p>Many moderates and less political voters are upset that our country is dividing. Who they blame for that division might well decide the next elections. Trump is trying to divide Americans, distracting us from real issues of racism and distracting us from everything else: how can we make that backfire?  
+	<p>Remember that their media is trying to hype this up and maximize the conflict, so they’re reading a lot from that perspective. Make this the “Yes, and …” part, and share that Kaepernick chose to kneel rather than sit in order to be respectful. Ask why and when this went from Kaepernick and one other player very quietly expressing themselves and became a national issue. Did Kaepernick curse anyone out, or make a stink? What did he do, when did he do it, that wasn't merely a small disagreement but an issue worth tearing the
+country apart over? If he believes that racism and police brutality are major issues, how should he give voice to that? </p>
+
+    <p>Many moderates and less political voters are upset that our country is dividing. Who they blame for that division might well decide the next elections. Trump is trying to divide Americans, distracting us from real issues of racism and distracting us from everything else: how can we make that backfire? 
+
+    <p><div class="leverage">Dialogue Leverage: we have been desperate for unity. Now conservatives are feeling that too. Start conversations.</div>
 
 <p>We need to carefully avoid making this about leftist protestors -vs- everyone. Make it sports (everyone) -vs- just Trump. Frame the
 conversation as everyone against Trump, not left against right; as an issue where Trump supporters are abandoning him. How to is easy:
 help articles of sports stars abanding Trump go viral.
 
-<p><div class="leverage">Electoral Leverage: high! This could backfire very badly, with loyalty to sports leveraged against loyalty to Trump. Facts don't work when we feel like we are on different teams, and this could help us feel like we are one team.</div></p>
+	Learn more: Steelman Arguments
+
+	<h3>Goals, Audience and Leverage</h3>
+	
+	<p>Have you seen another issue where conservative-leaning white men who voted for
+	Trump are modeling standing up to him? I can't think of one. I think the electoral
+	leverage of "sports-vs-Trump" is very high, and help might clear out some of the
+	cognitive bias we have been drowning in this year: Facts don't work when we feel like 
+	we are on different teams, and this could help us feel like we are one team.
+
+	<p><div class="leverage">Electoral Leverage: high! This could backfire very badly for Trump, with loyalty to sports leveraged against loyalty to Trump. </div></p>
 
     <h4>2) Police brutality and racism</h4> 
+
+    <p>Kaepernick taking a knee, by itself, isn't an observation of racism. Not 
+    surprisingly this makes it hard to stay the topic we wish America would focus on.
 <p>Once the argument about patriotism is out of the way (quite a challenge) this may be an opportunity to talk about racism. Or, it may not be a good opening. I haven’t seen much talk about police brutality coming from the current fracas. But we should look for ways to get back to the real issues to the extent we can. 
 
-<p><div class="leverage">Electoral Leverage: low. Hard to be heard at this time. Kaepernick taking a knee is not a strong example of racism, which is (not suprisingly) a better place to start that conversation. Please share ideas that seem to work. <a href="#observation-racism">We did find one good example that fits this conversation.</a>.</div></p>
+	<p><div class="leverage">Electoral Leverage: low. Hard to be heard at this time. Kaepernick taking a knee is not a strong example of racism, which is (not suprisingly) a better place to start that conversation. Please share ideas that seem to work. <a href="#observation-racism">We did find one good example that fits this conversation.</a>.</div></p>
 
-<p class="warning">Warning: Talk about patriotism or racism in any one conversation; not both! Mixing these conversations is how the trolls win. Post football players and other messengers upset with Trump's bullying ways, and post Kaepernick and allies thoughts on why they started this: but don't expect one conversation to engage both issues, and don't expect people to hear conversations about racism until you open the door by disarming the landmines about patriotism.</p>
+	<p class="warning">Standard Simplicity Warning: Talk about patriotism or racism in any one conversation; not both! Mixing these conversations is how the trolls win. Post football players and other messengers upset with Trump's bullying ways, and post Kaepernick and allies thoughts on why they started this: but don't expect one conversation to engage both issues, and don't expect people to hear conversations about racism until you open the door by disarming the landmines about patriotism.</p>
 
-    <h4>Active Listening / Steelman Argument from the right</h4>
+  </div><!-- see4 -->
+</div><!-- see1, first section -->  	
 
-    <p>Not-troll conservatives are often describing a desire that we get along better, that we stop being divided as a country. I think this is something we can agree with; it could be a powerful moment for that. Share that you feel the same way to help open conversations. 
 
-<p>Remember that their media is trying to hype this up and maximize the conflict, so they’re reading a lot from that perspective. Make this the “Yes, and …” part, and share that Kaepernick chose to kneel rather than sit in order to be respectful. Ask why and when this went from Kaepernick and one other player very quietly expressing themselves and became a national issue. Did Kaepernick curse anyone out, or make a stink? What did he do, when did he do it, that wasn't merely a small disagreement but an issue worth tearing the
-country apart over? If he believes that racism and police brutality are major issues, how should he give voice to that? </p>
-    <p><div class="leverage">Dialogue Leverage: we have been desperate for unity. Now conservatives are feeling that too. Start conversations.</div>
-    </li>
-  </ul>
-</li>
 
-<li class="see1 post"><h2>Posts to Create Atmosphere</h2>
-  <h3 class="see4">Messengers! (<a href="http://cognitivepolitics.org/techniques/messengers">definition</a>)</h3>
-  <p class="see4">Much of modern politics is about division.
-  Finding the right messengers is an
-  and easy way to short-circuit these divisions. Most of the sports-related messengers are pretty mild: they are standing up for the right to protest, and light on joining the original message. Still, first steps are usually the hard ones. So start here, and then follow up with articles on racism.
 
-  <p class="see4">The mildest frame &mdash; and thus perhaps best for wavering Trump voters &mdash; is simply that some of Trump’s past supporters have had enough. 
 
-  <p class="see4">Sports-lovers who voted for Trump are unhappy, feeling their loyalties torn. Many people care about sports
+<div class="see1 big post">
+  <h2>Posts to Initiate</h2>
+  <div class="see3"> 	
+
+  	
+    <h3 class="see4">Messengers! (<a href="http://cognitivepolitics.org/techniques/messengers">definition</a>)</h3>
+ 	<p class="see4">Much of modern politics is about division.
+  	Finding the right messengers is an
+  	and easy way to short-circuit these divisions. Most of the sports-related messengers are pretty mild: they are standing up for the right to protest, and light on joining the original message. Still, first steps are usually the hard ones. So start here, and then follow up with articles on racism.
+
+  	<p class="see4">The mildest frame &mdash; and thus perhaps best for wavering Trump voters &mdash; is simply that some of Trump’s past supporters have had enough. 
+
+  	<p class="see4">Sports-lovers who voted for Trump are unhappy, feeling their loyalties torn. Many people care about sports
 much more than politics. For left-leaning activists this doesn’t feel important, but it might be more leverage than we almost ever
 have.  A powerful <em>starting</em> place to lower the boundaries that get in the way of saners conversations and saner votes.</p>
+  </div>
+  	
+  <p class="justshow">Start with mild <a href="http://cognitivepolitics.org/techniques/messengers">messengers</a> that wavering voters will find easy to accept. <span >Share without comment so you don't mix your voice over your messengers: (1) <a href="https://www.si.com/tech-media/2017/09/24/donald-trump-nfl-national-anthem-terry-bradshaw">Terry Bradshaw, models first step away from Trump.</a><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.si.com%2Ftech-media%2F2017%2F09%2F24%2Fdonald-trump-nfl-national-anthem-terry-bradshaw&layout=button&size=small&mobile_iframe=true&appId=189118766695&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+  	(2) <a href="https://www.rawstory.com/2017/09/nbas-steve-kerr-blasts-trump-over-anthem-tantrum-you-know-what-else-is-disrespectful-to-our-flag-racism/">Steve Kerr (NBA) blasts Trump</a><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.rawstory.com%2F2017%2F09%2Fnbas-steve-kerr-blasts-trump-over-anthem-tantrum-you-know-what-else-is-disrespectful-to-our-flag-racism%2F&layout=button&size=small&mobile_iframe=true&appId=167915303258430&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> ...</p> 
+  <div class="see3"> 	
+  	(3) <a href="https://www.washingtonpost.com/news/early-lead/wp/2017/09/25/cowboys-players-take-a-knee-with-owner-jerry-jones-before-standing-for-anthem/">“Trump Can’t Divide This” on Dallas Cowboys</a> has an amazing opening,<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.washingtonpost.com%2Fnews%2Fearly-lead%2Fwp%2F2017%2F09%2F25%2Fcowboys-players-take-a-knee-with-owner-jerry-jones-before-standing-for-anthem&layout=button&size=small&mobile_iframe=true&appId=189118766695&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+  	(4) and this long Sports Illustrated article on <a href="A long Sports Illustrated article on Kaepernick as a person that basically calms things down, and creates a nice environment against trolling: https://www.si.com/mmqb/2017/03/30/nfl-colin-kaepernick-free-agent-quarterback-looking-job
+  ">Kaepernick as a person</a> helps calms down the controversy, helping create an environment inhospitable to trolling.<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.si.com%2Fmmqb%2F2017%2F03%2F30%2Fnfl-colin-kaepernick-free-agent-quarterback-looking-job&layout=button&size=small&mobile_iframe=true&appId=189118766695&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+  	<br><a href="http://cognitivepolitics.org/issues/takeaknee#more-messengers">-more-</a></p>
+  	<div class="see4" id="more-messengers">
+  	  <p class="see4">(5) <a href="http://www.sfgate.com%2Fathletics%2Farticle%2FA-s-Bruce-Maxwell-first-MLB-player-to-kneel-for-12223798.php">Baseball joins in</a> this includes photo of hand on heart while kneeling, that looks like patriotism under duress, instead of being "against" something. <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.sfgate.com%252Fathletics%252Farticle%252FA-s-Bruce-Maxwell-first-MLB-player-to-kneel-for-12223798.php&layout=button&size=small&mobile_iframe=true&appId=189118766695&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></p>
+  
+  	  <p class="see4">This unfortunately says “Occupy Democrats” but is <a href="https://www.facebook.com/OccupyDemocrats/videos/vb.346937065399354/1713065035453210/?type=2&theater">a sportscaster from Trump’s core demographic of somewhat older white men, a veteran, crushing Trump.</p>
+ 
+      <p class="see4"><a href="https://www.washingtonpost.com/news/posteverything/wp/2017/09/29/im-a-white-country-singer-i-still-took-a-knee-after-i-sang-the-national-anthem-at-an-nfl-game/?tid=ss_fb&utm_term=.1068688660b2">Country music takes a knee.</a></p>
+  
+  	  <p class="see4">It’s good to be up front: these unity messages are not Kaepernick’s original message, which is getting lost, and if you have an idea that can pull support away from Trump as much as sports teams unifying against him, and at the same time get Kaepernick’s message out, please share it. These messengers may
+  be an opening, a first step, in an environment where usually no progress is made.</p>
 
-
-  <ul class="flush"><!-- types of messengers begins -->  
-    <li class="see2"><h3>Start here! Sports -vs- Trump </h3>
-      <img class="see4 blog-image" src="images/Messengers.png"/>
-
-      <p class="see3">Core suggestion: post one each day, starting with the mildest openings, without adding an introduction that changes the voice &mdash; these don't win arguments but change the atmosphere.</p>
-
-      <ol class="flush relist">
-        <li class="see2"><a href="https://www.si.com/tech-media/2017/09/24/donald-trump-nfl-national-anthem-terry-bradshaw">Terry Bradshaw, modeling stepping gently away from Trump.</a> <span class="fbc">Copy to FB</span></li>
-        <li class="see3"><a href="https://www.rawstory.com/2017/09/nbas-steve-kerr-blasts-trump-over-anthem-tantrum-you-know-what-else-is-disrespectful-to-our-flag-racism/">Steve Kerr (NBA) blasts Trump</a></li>
-        <li class="see3"><a href="https://www.washingtonpost.com/news/early-lead/wp/2017/09/25/cowboys-players-take-a-knee-with-owner-jerry-jones-before-standing-for-anthem/">“Trump Can’t Divide This” on Dallas Cowboys</a> &mdash; an amazing opening.</li>
-        <li class="see3">A long Sports Illustrated article on <a href="A long Sports Illustrated article on Kaepernick as a person that basically calms things down, and creates a nice environment against trolling: https://www.si.com/mmqb/2017/03/30/nfl-colin-kaepernick-free-agent-quarterback-looking-job
-  ">Kaepernick as a person</a> that basically calms things down, and creates a nice environment against trolling.</li>
-        <li class="see3"><a href="http://www.sfgate.com%2Fathletics%2Farticle%2FA-s-Bruce-Maxwell-first-MLB-player-to-kneel-for-12223798.php">Baseball joins in: this includesa Great photo of hand on heart while kneeling, that looks like patriotism under duress, instead of being "against" something.</a>
-        <br/><a href="https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.sfgate.com%2Fathletics%2Farticle%2FA-s-Bruce-Maxwell-first-MLB-player-to-kneel-for-12223798.php"><img src="./images/BruceMaxwell.png"/></a>
-        </li>
-        <li class="see3">This unfortunately says “Occupy Democrats” but is <a href="https://www.facebook.com/OccupyDemocrats/videos/vb.346937065399354/1713065035453210/?type=2&theater">a sportscaster from Trump’s core demographic of somewhat older white men, a veteran, crushing Trump.</a></li>
-      </ol><!--sports messengers inner list -->
-    </li><!--sports messengers section -->
-    <li class="see2 image"><h3>Messenger: Country Music</h3>
-      <ul>
-        <li class="see3">
-        <a href="https://www.washingtonpost.com/news/posteverything/wp/2017/09/29/im-a-white-country-singer-i-still-took-a-knee-after-i-sang-the-national-anthem-at-an-nfl-game/?tid=ss_fb&utm_term=.1068688660b2">Country music takes a knee</a>
-        </li>
-      </ul>
-    </li><!-- country music section-->
-  </ul><!-- types of messengers list, still in Post li under messengers h3 -->
-  <p class="see4">It’s good to be up front: these unity messages are not Kaepernick’s original message, which is getting lost, and if you have an idea that can pull support away from Trump as much as sports teams unifying against him, and at the same time get Kaepernick’s message out, please share it. 
-
-  These messengers may
-  be an opening, a first step, in an environment where usually no progress is made.
-
-  these are the opening that is required to make Trump’s divisive distractions backfire, creating space for the real message if anything can. Start with these anti-trolling social media posts to create space, then go back to the voices of the original protest.
-  </p>
-  <p class="see4">Note that there are three very different voices recommended here. Let messengers and witnesses speak for themselves, without adding your voice. When Trump commits an outrage, when he is trolling, 
-  speak with, for and as everyone &mdash; isolate him, don't let him represent conservatives against the left. When it is time for you to speak, stick to your frame, without saying "no" or 
-  </p>
-
-  <h3 class="see1">Observations</h3>
-  <p class="see3">Another type of post to start with is to simply describe your view or your frame, without arguing.
-  <ul class="flush">  
-    <li class="see2 image">Observations:: What is happening?
-      <p class="see3" id="observation-racism">Share plain, non-editorial observations of the racism that #takeaknee is protesting, or share messengers
+  	  <h3 class="see4">Observations</h3>
+  	</div>
+  	
+    <p>Messengers help open doors, and deal with controversy. Another type of post to start with is to simply describe your view or <strong>observation,</strong> without arguing. Here's an exmample: <a href="https://twitter.com/imnottayediggs/status/911731686710370304">To be clear #TakeAKnee is about protesting institutionalized racism...</a></p> 
+  	
+    <p class="see4" id="observation-racism">Share plain, non-editorial observations of the racism that #takeaknee is protesting, or share messengers
       favored by conservatives, like <a href="https://www.nytimes.com/2017/09/29/us/air-force-academy-racial-slurs.html?_r=1">Air Force Academy deals with horrible racism in the right way.</a></p>  
-      <p class="see3">We talk about fake news, privilege and filter bubbles a lot, but then forget that it is real. 
+    <p class="see4">We talk about fake news, privilege and filter bubbles a lot, but then forget that it is real. 
       Many white people really don't know how bad racism is. Yeah, it's lazy, sloppy, they have no good excuse... but
       this is politics, so pay attention to the bad excuses.  </p>
-    </li>
 
-    <li class="see2 image">Observations:: I statements</li>
-      <p>Find yours. I like: <a href="https://twitter.com/imnottayediggs/status/911731686710370304">To be clear #TakeAKnee is about protesting institutionalized racism...</a></p> 
-
-  </ul>
-</li>
+  </div><!-- class="see3" for now --> 
+</div>
 
 
 
-<li class="see1 reply"><h2>Reply &mdash; Quick Responses</h2>
-  <p class="see2">Our frame, our wish, is to talk about racism. When false accusations are floated, calm them.</p>
-  <p class="see3">Trump moved the dialogue to one about the flag and military. We want his tactic to backfire, to cost Trump votes, and then to get back on topic when we can. So these posts mostly aim to muffle distractions rather than debate them. <a style="display: none;" note="what" href="#dialogue-not-flag-racism">Dialogue follow-up</a></p>
+<div class="see1 big reply">
+  <h2>Reply &mdash; Quick Responses</h2>
+  <div class="see4"> 	
 
-  <ul>
-    <li class="see2"><h3>Re: This is divisive or <em>anti-military.</em></h3>
-      <p class="see3">Text you can use: Kaepernick chose to kneel rather than sit specifically to show respect, as a gesture to the military, after talking with Green Beret Nate Boyer: ”Soldiers take a knee in front of a fallen brother's grave, you know, to show respect.” Now, can America finally stop running in fear every time someone wants us to talk about racism? <a href="http://www.snopes.com/veteran-kaepernick-take-a-knee-anthem/">And share this.</a>
-    </li>
-    <li class="see2"><h3>Re: This is anti-military</h3> 
-      <p class="see3">Or this, which seems especially good for holding the center and isolating angry attacks, and has a good picture for facebook shares: "Major Danny Sjursen in The American Conservative says to <a href="http://www.theamericanconservative.com/articles/leave-veterans-and-soldiers-naitonal-anthem-out-of-the-nfl-debate/">Leave Veterans and Soldiers Out of the Anthem Debate</a>."  Or <a href="https://www.quora.com/Why-is-sitting-or-kneeling-during-the-national-anthem-OK-when-the-combat-veterans-missing-both-legs-still-stand/answer/Blake-Bennett-12">a conservative ranting about nonveterans using wounded veterans as props.</a>
+	<p class="see4">Our frame, our wish, is to talk about racism. When false accusations are floated, calm them.</p>
+	<p class="see4">Trump moved the dialogue to one about the flag and military. We want his tactic to backfire, to cost Trump votes, and then to get back on topic when we can. So these posts mostly aim to muffle distractions rather than debate them. <a style="display: none;" note="what" href="#dialogue-not-flag-racism">Dialogue follow-up</a></p>
+  </div>	
+
+  <div class="see2"> 	
+	<h3>Re: This is divisive or <em>anti-military.</em></h3>
+	<p class="see3x"> <a href="http://www.theamericanconservative.com/articles/leave-veterans-and-soldiers-naitonal-anthem-out-of-the-nfl-debate/">Leave Veterans and Soldiers Out of the Anthem Debate</a>.<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.theamericanconservative.com%2Farticles%2Fleave-veterans-and-soldiers-naitonal-anthem-out-of-the-nfl-debate&layout=button&size=small&mobile_iframe=true&appId=189118766695&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> ...</p>
+	
+    <p class="see3">[Text you can use:] Kaepernick chose to kneel rather than sit specifically to show respect, as a gesture to the military, after talking with Green Beret Nate Boyer: ”Soldiers take a knee in front of a fallen brother's grave, you know, to show respect.” Now, can America finally stop running in fear every time someone wants us to talk about racism? <a href="http://www.snopes.com/veteran-kaepernick-take-a-knee-anthem/">And share this.</a><iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.snopes.com%2Fveteran-kaepernick-take-a-knee-anthem%2F&layout=button&size=small&mobile_iframe=true&appId=167915303258430&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+  
+	<p class="see3">Or share these conservative messengers (don't add comments to messengers), good for holding the center and isolating angry attacks.  <a href="http://www.theamericanconservative.com/articles/leave-veterans-and-soldiers-naitonal-anthem-out-of-the-nfl-debate/">Leave Veterans and Soldiers Out of the Anthem Debate</a>. <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.theamericanconservative.com%2Farticles%2Fleave-veterans-and-soldiers-naitonal-anthem-out-of-the-nfl-debate&layout=button&size=small&mobile_iframe=true&appId=189118766695&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>  Or <a href="https://www.quora.com/Why-is-sitting-or-kneeling-during-the-national-anthem-OK-when-the-combat-veterans-missing-both-legs-still-stand/answer/Blake-Bennett-12">a conservative ranting about nonveterans using wounded veterans as props.</a><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.quora.com%2FWhy-is-sitting-or-kneeling-during-the-national-anthem-OK-when-the-combat-veterans-missing-both-legs-still-stand%2Fanswer%2FBlake-Bennett-12&layout=button&size=small&mobile_iframe=true&appId=385560464839773&width=59&height=20" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
       <p class="see4">Note: I wouldn't contradict if a veteran or soldier speaks for themselves. But when someone like Trump speaks for others,
   it's good to counter from a centrist position.
-    </li>
-  </ul> 
-</li><!-- Reply -->
+  </div><!--see2-->	
+</div>
 
 
-<li class="see1 dialogue"><h2>Communication &mdash; 1:1 Dialogue</h2>
-  <ul class="flush">
-    <li class="see2"><h3>Start with asking, then listen, reflect, answer, and share.</h3>
-      <p class="see3">Radical civility, Nonviolent Communication, Powerful NonDefensive Communication
-      and many other approaches can lead to surprising openings and connections.
-      They mostly begin with listening, rather than quick resources appropriate for this list.
-      Take a workshop or class! Join <a href="https://facebook.com/groups/smartly">an online
-      community that practices and teaches radical civility,</a>
-    </li>
-    <li class="see2"><h3>Emphasize areas of agreement for openings</h3>
-<p class="see3">Most Americans are agreed that we do not want police brutality and racism. We disagree about whether this is a rare bad apple or a systemic problem, what to do about it, and how to solve it… </p>
-    </li>
-    <li class="see2"><h3>What questions help open this conversation up?<h3>
-      <p class="see4">Look for open questions: "What would it be like if you thought you had to talk to your kids like black parents have to warn theirs?" 
-    </li>
-    <li class="see"><h3>Getting Conversations back on track.</h3>
-      <p class="see4">This started with a frame of engaging racism, thrown off track by mostly by Trump. 
-  So, if someone is upset that kneeling is disrespectful, acknowledge that, say you don’t find it so but see why they might &mdash; avoid that rabbit hole. Then ask or share something back on track, such as how do they think athletes should protest racism instead.</p>
-    </li>
-    <li class="see"><h3>Make specific requests. (NVC technique)</h3>
-      <p class="see4">Watch <a href="http://www.imdb.com/title/tt5895028/">13th</a> together, a documentary
-      about the prison system that includes conservative voices. Note that changing minds in 
-      online conversations is quite rare. Having a calm conversation that ends with a "maybe"
-      about watching a documentary together, even if that never happens, is one thousand times 
-      better than the average political online conversation. Go slow but move forward!</p>
-    </li>
-  </ul> 
-</li>
+<div class="see1 big dialogue">
+  <h2>Communication &mdash; 1:1 Dialogue</h2>
+  <p>Start with asking, then listen, reflect, answer, and share.
+  <a href="">-more resources, openings, and questions for dialogue.-</a></p>
+  
+  <div class="see4">	
+  	<p class="see4">Radical civility, Nonviolent Communication, Powerful NonDefensive Communication and many other approaches can lead to surprising openings and connections. They mostly begin with listening, rather than quick resources appropriate for this list. Take a workshop or class! Join <a href="https://facebook.com/groups/smartly">an online
+community that practices and teaches radical civility.</a></p>
+  
+  	<h3>Emphasize areas of agreement for openings</h3>
+	<p class="see3">Most Americans are agreed that we do not want police brutality and racism. We disagree about whether this is a rare bad apple or a systemic problem, what to do about it, and how to solve it.</p>
+  
+  	<h3>Listening: Get Conversations back on track.</h3>
+  	<p class="see3">This started with a frame of engaging racism, thrown off track by mostly by Trump. So, if someone is upset that kneeling is disrespectful, acknowledge that, say you don’t find it so but see why they might &mdash; avoid that rabbit hole. Then ask or share something back on track, such as how do they think athletes should protest racism instead.</p>
+  	
+    <h3>What questions help open this conversation up?<h3>
+	<p>Here is the BLM policy platform. Experiment with asking specific questions:
+which of these policies would be helpful?   https://policy.m4bl.org/end-war-on-black-people/
 
-<li class="see4"><h3>Appendix<h3>
+	<p class="see4">Look for open questions: "What would it be like if you thought you had to talk to your kids like black parents have to warn theirs?" 
+	
+	<h3>Make specific requests. (NVC technique)</h3>
+    <p class="see4">Watch <a href="http://www.imdb.com/title/tt5895028/">13th</a> together, a documentary about the prison system that includes conservative voices. Note that changing minds in online conversations is quite rare. Having a calm conversation that ends with a "maybe" about watching a documentary together, even if that never happens, is one thousand times better than the average political online conversation. Go slow but move forward!</p>
+  </div><!--see4-->
+</div>  
+
+
+<div class="see4">
+  <h2>Appendix<h2>
   <p class="see">For teachers: <a href="https://www.tolerance.org/magazine/discussing-takeaknee-in-class">Teaching Tolerance in classrooms</a>.</p>
-</li>
+  <p>Quora is often a good place to look for well thought articles to share on 
+topics like these, that feel written by a person rather than a reporter, <a href="https://www.quora.com/What-is-your-opinion-about-NFL-players-taking-a-knee-during-the-National-Anthem">opinions on NFL players taking a knee</a> or <a href="https://www.quora.com/What-are-the-main-arguments-against-NFL-players-protesting-during-the-national-anthem-How-should-we-respond-to-them">protesting the anthem</a>. If you want people in another filter bubble to hear a wide variety of voices reinforcing well-thought, calm and balanced views, it's a good place to find them.
+</div><!--appendix-->
+
+
+
 
 
 
