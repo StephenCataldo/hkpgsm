@@ -31,9 +31,9 @@
 /***** Visibility *****/
 /* change this: .see1 is visible but big so hover doesn't expose. */
 .start .see3 { display: none; } /* toggle at different sizes? */
-.start .see1:hover .see3 { display: block; }
+XXX.start .see1:hover .see3 { display: block; }
 .start .see3x { display: block;}
-.start .see1:hover .see3x { display: none; }
+XXXXX.start .see1:hover .see3x { display: none; }
 .start p { margin-top: 3px; margin-bottom: 12px; }
 .start .see4  { display: none; } 
 .start .justshow { display: block; }
@@ -118,3 +118,26 @@ body { font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 /* facebook iframes */
 iframe { position: relative; top: 2px; left: 1px; padding-right: 4px; }
+/* copy to facebook */
+.copy {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: yellow url("./images/material/ic_content_paste_black_18dp.png") no-repeat right;
+  background-size: 20px 20px;
+  text-indent: -9999px;
+}
+.copy .tooltip { display: none; }
+.copy { position: relative; }
+.copy:hover .tooltip {
+  position: absolute;
+  display: block;
+  text-indent: 0;
+  width: 150px;
+  bottom: 1.2em;
+  background: inherit;
+  background-image: none;
+  padding: 3px;
+  border: 1px solid #ddd;
+}
+   
