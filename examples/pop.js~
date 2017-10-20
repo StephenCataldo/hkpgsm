@@ -24,6 +24,8 @@ $(function() {
     console.log("Jump. " + $(this).children("h2").scrollTop() );
     */
     // Puttering with window scrolling, seems ok, rebuild with design clearer
+    // Hey - it works, not going to fiddle, but scrolls into view before
+    // making visible
     $(this).get(0).scrollIntoView();
     $(this).find("div.see3:last").get(0).scrollIntoView();
     //$(this).scrollTop(0);
