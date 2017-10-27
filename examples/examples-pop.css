@@ -55,11 +55,11 @@ li.plan-big li:before, li.reply li:before, li.post li:before, li.dialogue li:bef
 }
 
 li.plan-big:before {
-  content:  url('images/FlowChart-76px.png');
+  content:  url('./hkpgsm/examples/images/FlowChart-76px.png');
   margin-left: -30px;
 }
 li.plan-big li:before {
-  content:  url('images/FlowChart-18px.png');
+  content:  url('./hkpgsm/examples/images/FlowChart-18px.png');
   margin-left: -20px;
 }
 li.plan-big li:first-child:before {
@@ -67,20 +67,20 @@ li.plan-big li:first-child:before {
 }
 
 li.post:before {
-  content:  url('images/megaphone-blue_76.png');
+  content:  url('./hkpgsm/examples/images/megaphone-blue_76.png');
   margin-left: -30px;
 }
 li.post li.image:before {
-  content:  url('images/megaphone-blue_22.png');
+  content:  url('./hkpgsm/examples/images/megaphone-blue_22.png');
   margin-left: -20px;
 }
 
 li.reply:before {
-  content:  url('images/tennis-304408_76.png');
+  content:  url('./hkpgsm/examples/images/tennis-304408_76.png');
   margin-left: -30px;
 }
 li.reply li:before {
-  content:  url('images/tennis-304408_22.png');
+  content:  url('./hkpgsm/examples/images/tennis-304408_22.png');
   margin-left: -20px;
 }
 li.reply li:first-child:before {
@@ -88,11 +88,11 @@ li.reply li:first-child:before {
 }
 
 li.dialogue:before {
-  content:  url('images/dialogue_76.png');
+  content:  url('./hkpgsm/examples/images/dialogue_76.png');
   margin-left: -30px;
 }
 li.dialogue li:before {
-  content:  url('images/dialogue_22.png');
+  content:  url('./hkpgsm/examples/images/dialogue_22.png');
   margin-left: -20px;
 }
 li.dialogue li:first-child:before {

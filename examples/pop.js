@@ -1,6 +1,10 @@
 /* jquery script */
 
 
+$().ready(function() {
+  $(".see3").css("display", "none");
+});
+
 $(function() {
   
   /*
